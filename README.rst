@@ -75,10 +75,10 @@ If you use Python 3.5.3 or higher, you can use asynchronous client.
 .. code:: python
 
   import asyncio
-  import pybitflyer.async
+  import pybitflyer.async_support
 
   loop = asyncio.get_event_loop()
-  api = pybitflyer.async.API(loop=loop)
+  api = pybitflyer.async_support.API(loop=loop)
 
   # send a single request
   loop.run_until_complete(api.ticker())
